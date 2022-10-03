@@ -67,25 +67,13 @@ const Contact = () => {
                 method='POST'
                 encType='multipart/form-data'
               >
-                <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-                  <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>Name</label>
-                    <input
+                <div className='flex flex-col py-2'>
+                  <label className='uppercase text-sm py-2'>Name</label>
+                  <input
                       className='border-2 rounded-lg p-3 flex border-gray-300 text-black'
                       type='text'
                       name='name'
-                    />
-                  </div>
-                  <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>
-                      Phone Number
-                    </label>
-                    <input
-                      className='border-2 rounded-lg p-3 flex border-gray-300 text-black'
-                      type='text'
-                      name='phone'
-                    />
-                  </div>
+                  />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Email</label>
