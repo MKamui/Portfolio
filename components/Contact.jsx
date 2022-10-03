@@ -1,10 +1,36 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import ContactImg from '../public/assets/contact.jpg';
 
 const Contact = () => {
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+  const [error, setError] = useState(true)
+  const textRef = useRef('')
+
+  const handleData = () => {
+    if (name?.length > 0 && email.length > 0 && subject.length > 0 && message.length > 0)
+    setError(false)
+  }
+
+  useEffect(() => {
+    handleData()
+  }, [name, email, subject, message, error])
+
+  useEffect(() => {
+    setName('')
+    setEmail('')
+    setSubject('')
+    setMessage('')
+    setError(true)
+  }, []) 
+  
+
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
@@ -73,6 +99,8 @@ const Contact = () => {
                       className='border-2 rounded-lg p-3 flex border-gray-300 text-black'
                       type='text'
                       name='name'
+                      onChange={(e) => setName(e.target.value)}
+                      value={name}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -81,6 +109,8 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 flex border-gray-300 text-black'
                     type='email'
                     name='email'
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
@@ -89,19 +119,26 @@ const Contact = () => {
                     className='border-2 rounded-lg p-3 flex border-gray-300 text-black'
                     type='text'
                     name='subject'
+                    onChange={(e) => setSubject(e.target.value)}
+                    value={subject}
                   />
                 </div>
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>Message</label>
-                  <textarea
-                    className='border-2 rounded-lg p-3 border-gray-300 text-black'
-                    rows='10'
+                  <input
+                    className='border-2 rounded-lg p-3 border-gray-300 text-black pb-10'
                     name='message'
-                  ></textarea>
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder='Your message...'
+                    value={message}
+                  ></input>
                 </div>
-                <button className='w-full p-4 mt-4'>
+                {!error? <button className='w-full p-4 mt-4'>
                   Send Message
-                </button>
+                </button> 
+                : <p className='w-full p-4 mt-4 shadow-md shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-gray-800 to-gray-500 text-white text-center'>
+                  Send Message
+                  </p>}
               </form>
             </div>
           </div>
