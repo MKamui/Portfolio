@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import ContactImg from '../public/assets/contact.jpg';
@@ -11,7 +11,6 @@ const Contact = () => {
   const [subject, setSubject] = useState('')
   const [message, setMessage] = useState('')
   const [error, setError] = useState(true)
-  const textRef = useRef('')
 
   const handleData = () => {
     if (name?.length > 0 && email.length > 0 && subject.length > 0 && message.length > 0)
