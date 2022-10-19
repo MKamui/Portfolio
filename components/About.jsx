@@ -14,15 +14,15 @@ const About = () => {
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-300'>
           I work the last 11 years as a Philosophy teacher, in various educational institutions and university academy research.
-          There I learn a lot about soft skills, teamwork, leadership, and being analytic, but, I feel something is missing.
+          There I learn a lot about soft skills, teamwork, leadership, and being analytical, but, I feel something is missing.
           </p>
           <p className='py-2 text-gray-300'>
-          Since I was a child  I have played video games and have had an interest in computers, 
+          Since I was a child I have played video games and have had an interest in computers, 
           but only in the past years did I take the time to learn about programming, and I was fascinated, by the logic, 
-          the creating aspect, I was thrilled with this kind of knowledge, so I make a decision in my life, to become a developer.
+          and the creating aspect, I was thrilled with this kind of knowledge, so I make a decision in my life, to become a developer.
           </p>
           <p className='py-2 text-gray-300'>
-          First I studied with some apps and free webs, but later I go to a Bootcamp, 
+          First I studied some apps and free webs, but later I go to a Bootcamp, 
           where I gain experience with some technologies and start to make some projects, after that I read, 
           and practice with other frameworks and possibilities to become a great web developer.
           </p>
