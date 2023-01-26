@@ -2,6 +2,8 @@ import React from 'react';
 import sneakerImg from '../public/assets/projects/sneaker.jpg'
 import cloudImg from '../public/assets/projects/cloud.jpg'
 import snoopyImg from '../public/assets/projects/snoopy.jpg'
+import henryhouseImg from '../public/assets/projects/henryhouse.jpg'
+import starwarsImg from '../public/assets/projects/starwars.jpg'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -14,9 +16,19 @@ const Projects = () => {
         <h2 className='py-4'>What I&lsquo;ve Create</h2>
         <div className='grid md:grid-cols-2 gap-8'>
           <ProjectItem
+            title='HenryHouse'
+            backgroundImg={henryhouseImg}
+            projectUrl='/henryhouse'
+          />
+          <ProjectItem
             title='Sneakers Paradise'
             backgroundImg={sneakerImg}
             projectUrl='/sneakers'
+          />
+          <ProjectItem
+            title='Starwars App'
+            backgroundImg={starwarsImg}
+            projectUrl='/starwars'
           />
           <ProjectItem
             title='Cloud Management'

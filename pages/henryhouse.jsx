@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import React from 'react';
-import cloudImg from '../public/assets/projects/cloud.jpg';
+import henryhouseImg from '../public/assets/projects/henryhouse.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const crypto = () => {
+const property = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -13,12 +13,12 @@ const crypto = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={cloudImg}
+          src={henryhouseImg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='py-2 text-red-700'>Cloud Management App</h2>
-          <h3>2022</h3>
+          <h2 className='py-2 text-red-700'>HenryHouse</h2>
+          <h3>2023</h3>
         </div>
       </div>
 
@@ -26,37 +26,46 @@ const crypto = () => {
         <div className='col-span-4'>
           <h2 className='mb-4'>Project Overview</h2>
           <p className='mb-4'>
-          This single-page app is about a cloud management service, you can see the info, the packages, services, 
-          and all the characteristics of the enterprise. I do the app to practice the Tailwind and React tools.
+          This app was made for a Hackathon entry. Here you can create an account, log in and log out, modify your info, 
+          see other members of Henry in your country or area, chat with them, make posts in a forum, and comment on other people posts.
+          The idea of the app was to strengthen the Henrys community and give them tools for easy contact between them.
           </p>
           <a
-            href='https://github.com/MKamui/Tailwind-CloudManagement'
+            href='https://github.com/sanavalos/HenryHouse'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </a>
           <a
-            href='https://tailwind-cloud-management.vercel.app/'
+            href='https://henryhouse.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4'>Demo</button>
           </a>
-
         </div>
         <div className='col-span-4 md:col-span-1 shadow-md shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2 text-red-700'>Technologies</p>
-            <div className='grid grid-cols-3 md:grid-cols-1 '>
+            <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> React
+              </p>
+              <p className='py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Redux
               </p>
               <p className='py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Tailwind
               </p>
               <p className='py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Javascript
+              </p>
+              <p className='py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Firebase
+              </p>
+              <p className='py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> Google Cloud
               </p>
             </div>
           </div>
@@ -69,4 +78,4 @@ const crypto = () => {
   );
 };
 
-export default crypto;
+export default property;

@@ -61,7 +61,7 @@ const netflix = () => {
           </div>
         </div>
         <Link href='/#projects'>
-          <button>Back to projects</button>
+          <button className='p-2'>Back to projects</button>
         </Link>
       </div>
     </div>
