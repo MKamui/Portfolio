@@ -27,7 +27,7 @@ const property = () => {
           <h2 className='mb-4'>Project Overview</h2>
           <p className='mb-4'>
           This fully responsive app was the work of three people and was made for a Hackathon entry. Here you can create an account, log in and log out, modify your info, 
-          see other members of Henry in your country or area, chat with them, make posts in a forum, and comment on other people's posts.
+          see other members of Henry in your country or area, chat with them, make posts in a forum, and comment on other people&lsquo;s posts.
           The idea of the app was to strengthen the Henrys community and give them tools for easy contact between them.
           </p>
           <a
