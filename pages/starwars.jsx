@@ -26,7 +26,7 @@ const property = () => {
         <div className='col-span-4'>
           <h2 className='mb-4'>Project Overview</h2>
           <p className='mb-4'>
-          This app was a test for a job interview, it takes an API, and renders the info for the characters like the name, 
+          This fully responsive app was a test for a job interview, it takes an API, and renders the info for the characters like the name, 
           planet of origin, birthday, and gender. Also, the app has a favorite function, and the possibility of searching a determined character of the favorite group.
           </p>
           <a

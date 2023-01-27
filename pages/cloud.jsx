@@ -26,7 +26,7 @@ const crypto = () => {
         <div className='col-span-4'>
           <h2 className='mb-4'>Project Overview</h2>
           <p className='mb-4'>
-          This single-page app is about a cloud management service, you can see the info, the packages, services, 
+          This responsive single-page app is about a cloud management service, you can see the info, the packages, services, 
           and all the characteristics of the enterprise. I do the app to practice the Tailwind and React tools.
           </p>
           <a
