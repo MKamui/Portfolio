@@ -4,6 +4,7 @@ import cloudImg from '../public/assets/projects/cloud.jpg'
 import snoopyImg from '../public/assets/projects/snoopy.jpg'
 import henryhouseImg from '../public/assets/projects/henryhouse.jpg'
 import starwarsImg from '../public/assets/projects/starwars.jpg'
+import wordleImg from '../public/assets/projects/wordle.jpg'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -29,6 +30,11 @@ const Projects = () => {
             title='Starwars App'
             backgroundImg={starwarsImg}
             projectUrl='/starwars'
+          />
+          <ProjectItem
+            title='Wordle not Wordle'
+            backgroundImg={wordleImg}
+            projectUrl='/wordle'
           />
           <ProjectItem
             title='Cloud Management'
