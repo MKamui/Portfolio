@@ -5,6 +5,7 @@ import snoopyImg from '../public/assets/projects/snoopy.jpg'
 import henryhouseImg from '../public/assets/projects/henryhouse.jpg'
 import starwarsImg from '../public/assets/projects/starwars.jpg'
 import wordleImg from '../public/assets/projects/wordle.jpg'
+import weatherImg from '../public/assets/projects/weather.jpg'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -45,6 +46,11 @@ const Projects = () => {
             title='Snoopy-Dogs App'
             backgroundImg={snoopyImg}
             projectUrl='/snoopy'
+          />
+          <ProjectItem
+            title='Weather Next App'
+            backgroundImg={weatherImg}
+            projectUrl='/weather'
           />
         </div>
       </div>

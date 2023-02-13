@@ -19,7 +19,7 @@ const About = () => {
           <p className='py-2 text-gray-300'>
           Since I was a child I have played video games and have had an interest in computers, 
           but only in the past years did I take the time to learn about programming, and I was fascinated, by the logic, 
-          and the creating aspect, I was thrilled with this kind of knowledge, so I make a decision in my life, to become a developer.
+          and the creating aspect, I was thrilled with this kind of knowledge, so I decided to become a developer.
           </p>
           <p className='py-2 text-gray-300'>
           First I studied some apps and free webs, but later I go to a Bootcamp, 
