@@ -13,34 +13,34 @@ const Navbar = () => {
   };
 
   return (
-    <div className='fixed w-full h-20 z-[100] ease-in-out duration-300 bg-white text-black'>
-      <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+    <div className='fixed w-full h-20 xl:h-28 3xl:h-44 4xl:h-52 z-[100] ease-in-out duration-300 bg-white text-black'>
+      <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
         <Link href='/'>
-          <a className='font-bold text-2xl tracking-widest flex text-center items-center'>
-          <Image
-            src={NavLogo}
-            width='50'
-            height='50'
-            alt='/'
-          />
+          <a className='font-bold text-xl lg:text-2xl xl:text-3xl 3xl:text-5xl 4xl:text-6xl tracking-wider flex text-center items-center hover:text-red-500'>
+            <div className='w-[50px] xl:w-[90px] 3xl:w-[130px] 4xl:w-[150px] aspect-square flex items-center justify-center'>
+              <Image
+                src={NavLogo}
+                alt='logo MF'
+              />
+            </div>
             Mario Franco
-            </a>
+          </a>
         </Link>
         <div>
-          <ul className='hidden md:flex font-bold'>
-            <li className='uppercase hover:border-b-2'>
+          <ul className='hidden md:flex font-bold text-xl lg:text-2xl xl:text-3xl 3xl:text-5xl 4xl:text-6xl space-x-[20px] lg:space-x-[30px] xl:space-x-[40px] 3xl:space-x-[70px] 4xl:space-x-[100px]'>
+            <li className='hover:text-red-500'>
               <Link href='/'>Home</Link>
             </li>
-            <li className='ml-10 uppercase hover:border-b-2'>
+            <li className='hover:text-red-500'>
               <Link href='/#about'>About</Link>
             </li>
-            <li className='ml-10 uppercase hover:border-b-2'>
+            <li className='hover:text-red-500'>
               <Link href='/#skills'>Skills</Link>
             </li>
-            <li className='ml-10 uppercase hover:border-b-2'>
+            <li className='hover:text-red-500'>
               <Link href='/#projects'>Projects</Link>
             </li>
-            <li className='ml-10 uppercase hover:border-b-2'>
+            <li className='hover:text-red-500'>
               <Link href='/#contact'>Contact</Link>
             </li>
           </ul>
@@ -78,16 +78,12 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+                className='rounded-full shadow-xl shadow-gray-400 cursor-pointer flex items-center justify-center w-[30px] aspect-square border border-gray-200'
               >
                 <AiOutlineClose />
               </div>
             </div>
-            <div className='border-b border-gray-300 my-4'>
-              <p className='w-[85%] md:w-[90%] py-4'>
-                Let&lsquo;s create something awesome!
-              </p>
-            </div>
+            <div className='border-b border-gray-300 my-4'/>
           </div>
           <div className='py-4 flex flex-col'>
             <ul className='uppercase'>
@@ -117,10 +113,7 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className='pt-40'>
-              <p className='uppercase tracking-widest text-red-700'>
-                Let&lsquo;s connect
-              </p>
+            <div className='pt-[40px]'>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
                   href='https://www.linkedin.com/in/mario-franco-427904178/'

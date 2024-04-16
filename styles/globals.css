@@ -20,11 +20,7 @@ html {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
-  }
-
-  h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-4xl sm:text-5xl md:text-6xl xl:text-8xl 3xl:text-9xl 4xl:text-10xl font-[Raleway]
   }
   
   li {
@@ -32,6 +28,6 @@ html {
   }
 
   button {
-    @apply shadow-md shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-red-800 to-red-500 text-white hover:scale-105 ease-in duration-300
+    @apply shadow-md shadow-gray-400 rounded-full uppercase bg-gradient-to-r from-red-800 to-red-500 text-white hover:scale-105 ease-in duration-300
   }
 }
